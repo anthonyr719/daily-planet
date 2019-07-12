@@ -1,0 +1,13 @@
+<h2>Update your article</h2>
+
+
+<form method="POST" action="/articles/<%= id %>/?_method=PUT">
+    <label for="articleTitle">Article Title</label>
+    <input type="text" name="articleTitle" value="<%= article.title %>"/>
+
+    <label input="articleBody">Article Text</label>
+    <input type="text" name="articleBody" value="<%= article.body %>"/>
+
+    <input type="submit" value="UPDATE MY ARTICLE">
+ 
+</form>
